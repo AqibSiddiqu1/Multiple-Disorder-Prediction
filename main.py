@@ -1,5 +1,7 @@
 import pickle
 import streamlit as st
+import sys
+sys.path.insert(1, "/Users/aqibsiddiqui/Desktop/Github/Multiple-Disorder-Prediction/__init__.py")
 from streamlit_option_menu import option_menu
 
 
