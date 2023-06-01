@@ -1,17 +1,16 @@
 import pickle
 import streamlit as st
 import sys
-sys.path.insert(1, "/Users/aqibsiddiqui/Desktop/Github/Multiple-Disorder-Prediction/__init__.py")
 from streamlit_option_menu import option_menu
 
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('/Users/aqibsiddiqui/Desktop/Main/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('/Users/aqibsiddiqui/Desktop/Multiple-Disorder-Prediction/diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('/Users/aqibsiddiqui/Desktop/Main/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('/Users/aqibsiddiqui/Desktop/Multiple-Disorder-Prediction/heart_disease_model.sav','rb'))
 
-parkinsons_model = pickle.load(open('/Users/aqibsiddiqui/Desktop/Main/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('/Users/aqibsiddiqui/Desktop/Multiple-Disorder-Prediction/parkinsons_model.sav', 'rb'))
 
 # sidebar for navigationsxq
 with st.sidebar:
